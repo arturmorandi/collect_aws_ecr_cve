@@ -1,0 +1,7 @@
+Collect AWS ECR Repository Scan Findings
+
+This script lists all ECR repositories and gets the integrated Clair reports for CVEs.
+It uses your local "~/.aws/credentials" file to authenticate, but if you're running it through a scheduler, make sure your EC2 instance has the correct roles assigned. An example of terraform code is also available.
+
+Pitfalls: In this version, it only gets results for the latest image.
+
